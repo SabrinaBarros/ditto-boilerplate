@@ -16,7 +16,8 @@ body {
 .header__title {
   margin: 0 0 16px;
   color: #fff;
-  font-size: 52px;
+  font-size: 48px;
+  font-weight: 700;
 }
 
 .header__button {
@@ -32,4 +33,40 @@ body {
   color: #5E60CE;
   cursor: pointer;
   box-shadow: 10px 10px 0 #6830c380;
+}
+
+.main {
+  border: 1px solid black;
+  width: 100%;
+  max-width: 900px;
+  padding: 8px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+
+.article {
+  border: 1px solid red;
+  margin: 8px;
+  width: 100%;
+  padding: 8px;
+}
+
+.article__title {
+  margin: 8px;
+  font-weight: 700;
+}
+
+.article__text {
+  margin: 8px;
+}
+
+.article__link {
+  display: inline-block;
+  margin: 8px;
+  color: black;
+  text-decoration: none;
+  right: 0;
 }
