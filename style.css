@@ -1,5 +1,8 @@
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: #131313;
+  background-color: #e8ebf3;
+  background-color: #fff;
 }
 
 .header {
@@ -36,7 +39,7 @@ body {
 }
 
 .main {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: 100%;
   max-width: 900px;
   padding: 8px;
@@ -48,25 +51,44 @@ body {
 }
 
 .article {
-  border: 1px solid red;
+  /* background-color: #6566f8; */
+  background-color: #fafbff;
+  background-color: #fff;
   margin: 8px;
   width: 100%;
-  padding: 8px;
+  padding: 8px 8px 24px;
+  border-radius: 8px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, .2);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
 }
 
 .article__title {
+  /* color: #6930c3; */
+  /* color: #1a1c1e; */
+  color: #7400b8;
   margin: 8px;
   font-weight: 700;
+  font-size: 24px;
 }
 
 .article__text {
   margin: 8px;
+  /* color: #131313; */
+  color: #555c65;
+  font-size: 16px;
 }
 
 .article__link {
-  display: inline-block;
+  /* color: #131313; */
+  color: #6930c3;
   margin: 8px;
-  color: black;
+  font-size: 16px;
   text-decoration: none;
-  right: 0;
+  align-self: flex-end;
+  position: absolute;
+  bottom: 0;
 }
