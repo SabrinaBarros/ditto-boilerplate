@@ -9,6 +9,8 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
+  --color: red;
+  --size: 10px;
 }
 
 .header {
@@ -110,4 +112,42 @@ body {
 
 small {
   font-size: 16px;
+  color: #fff;
+}
+
+.heart {
+  animation: pulse .8s alternate infinite ease-in;
+  background-color: var(--color);
+  height: var(--size);
+  position: relative;
+  width: var(--size);
+  display: inline-block;
+  margin: 0 4px;
+}
+
+.heart::after {
+  background-color: var(--color);
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: var(--size);
+  left: 50%;
+  position: absolute;
+  width: var(--size);
+}
+
+.heart::before {
+  background-color: var(--color);
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: var(--size);
+  top: 50%;
+  position: absolute;
+  width: var(--size);
+}
+
+@keyframes pulse {
+  0% {transform: rotate(-135deg) scale(0.8);}
+  100% {transform: rotate(-135deg) scale(1);}
 }
