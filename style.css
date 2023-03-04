@@ -151,3 +151,13 @@ small {
   0% {transform: rotate(-135deg) scale(0.8);}
   100% {transform: rotate(-135deg) scale(1);}
 }
+
+.small__a {
+  font-size: 16px;
+  text-decoration-line: underline;
+}
+
+.small__a:hover {
+  color: #80FFDB;
+  cursor: pointer;
+}
