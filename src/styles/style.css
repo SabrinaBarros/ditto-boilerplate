@@ -4,13 +4,10 @@ html {
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #e8ebf3;
-  background-color: #fff;
+  background-color: #ececf1;
   display: flex;
   flex-direction: column;
   height: 100%;
-  --color: red;
-  --size: 10px;
 }
 
 .header {
@@ -44,7 +41,7 @@ body {
   background-color: #fff;
   color: #5E60CE;
   cursor: pointer;
-  box-shadow: 10px 10px 0 #6830c380;
+  box-shadow: 10px 10px 0 rgba(105, 49, 196, 0.5);
 }
 
 .main {
@@ -59,17 +56,16 @@ body {
 }
 
 .article {
-  /* background-color: #6566f8; */
-  background-color: #fafbff;
-  background-color: #fff;
+  background-color: #f5f5f5;
   margin: 8px;
-  padding: 8px 8px 24px;
+  padding: 8px;
   border-radius: 4px;
   box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, .2);
-  position: relative;
   flex-basis: 250px;
   flex-shrink: 1;
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .article__title {
@@ -86,18 +82,31 @@ body {
   /* color: #131313; */
   color: #555c65;
   font-size: 16px;
+  height: 100%;
+}
+
+.article__footer {
+  text-align: end;
 }
 
 .article__link {
   /* color: #131313; */
   color: #6930c3;
-  margin: 8px;
-  font-size: 16px;
+  /* margin: 8px; */
+  font-size: 14px;
   text-decoration: none;
   align-self: flex-end;
-  position: absolute;
   bottom: 0;
   right: 0;
+  display: inline-flex;
+  align-items: center;
+  padding: 8px;
+}
+
+.article__icon {
+  fill: #6930c3;
+  width: 20px;
+  /* align-self: center; */
 }
 
 .footer {
@@ -110,12 +119,14 @@ body {
   width: 100%;
 }
 
-small {
+.footer__text {
   font-size: 16px;
   color: #fff;
 }
 
 .heart {
+  --color: #ffc0cb;
+  --size: 10px;
   animation: pulse .8s alternate infinite ease-in;
   background-color: var(--color);
   height: var(--size);
@@ -152,12 +163,24 @@ small {
   100% {transform: rotate(-135deg) scale(1);}
 }
 
-.small__a {
+.footer__link {
   font-size: 16px;
   text-decoration-line: underline;
+  transition: opacity .4s;
 }
 
-.small__a:hover {
-  color: #80FFDB;
+.footer__link:hover {
+  opacity: .5;
   cursor: pointer;
+}
+
+.visual-hidden {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  opacity: 0;
+  display: block;
+  height: 0;
+  width: 0;
+  overflow: hidden;
 }
