@@ -4,7 +4,7 @@ The **ditto-boilerplate** project is a simple and elegant front-end boilerplate,
 
 > If you found this project helpful or useful, please consider giving it a ⭐
 
-![ditto boilerplate](./docs/ditto-boilerplate.png)
+![ditto boilerplate](./docs/responsive-demo.gif)
 
 [❤️ Available on GitHub Pages :octocat:](https://sabrinabarros.github.io/ditto-boilerplate/src/index.html#)
 
