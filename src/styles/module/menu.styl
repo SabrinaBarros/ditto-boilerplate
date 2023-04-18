@@ -9,12 +9,18 @@
   padding 0
 
 .menu__list__link
+  border 2px solid transparent
   border-radius 4px
   color #ececf1d7
   padding 8px 16px
   text-decoration-line none
 
+.menu__list__link:focus-visible,
 .menu__list__link:hover
   background-color rgba(236, 236, 241, 0.133)
   color #fff
   opacity 1
+
+.menu__list__link:focus-visible
+  border-color #fff
+  outline none
