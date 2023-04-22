@@ -8,20 +8,28 @@
   list-style none
   padding 0
 
-.menu__list__link
+.menu__link
   border 2px solid transparent
   border-radius 4px
   color #ececf1d7
+  font-size: 16px
+  font-weight 400
   padding 8px 16px
-  transition all .3s ease-in
   text-decoration-line none
+  transition all .3s ease-in
 
-.menu__list__link:focus-visible,
-.menu__list__link:hover
+.menu__link:focus-visible,
+.menu__link:hover
   background-color rgba(236, 236, 241, 0.133)
   color #fff
   opacity 1
 
-.menu__list__link:focus-visible
+.menu__link:focus-visible
   border-color #fff
   outline none
+
+.menu__link--current
+  background-color rgba(236, 236, 241, 0.133)
+  color #fff
+  margin 0 4px
+  padding-top 100%
